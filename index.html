@@ -88,7 +88,7 @@
             q.options.forEach((option, index) => {
                 const button = document.createElement('button');
                 button.textContent = option;
-                button.onclick = () => checkAnswer(index + 1);  // +1 eklendi
+                button.onclick = () => checkAnswer(index);  // index değiştirildi
                 optionsDiv.appendChild(button);
             });
         }
@@ -97,8 +97,8 @@
             const correctAnswer = questions[currentQuestion].correctAnswer;
             userAnswers.push({
                 question: questions[currentQuestion].question,
-                userAnswer: questions[currentQuestion].options[answerIndex - 1],  // -1 eklendi
-                correctAnswer: questions[currentQuestion].options[correctAnswer - 1],  // -1 eklendi
+                userAnswer: questions[currentQuestion].options[answerIndex],
+                correctAnswer: questions[currentQuestion].options[correctAnswer],
                 isCorrect: answerIndex === correctAnswer
             });
 
