@@ -88,21 +88,22 @@
             q.options.forEach((option, index) => {
                 const button = document.createElement('button');
                 button.textContent = option;
-                button.onclick = () => checkAnswer(index);  // index değiştirildi
+                button.onclick = () => checkAnswer(index);
                 optionsDiv.appendChild(button);
             });
         }
 
         function checkAnswer(answerIndex) {
             const correctAnswer = questions[currentQuestion].correctAnswer;
+            const isCorrect = answerIndex === correctAnswer;
             userAnswers.push({
                 question: questions[currentQuestion].question,
                 userAnswer: questions[currentQuestion].options[answerIndex],
                 correctAnswer: questions[currentQuestion].options[correctAnswer],
-                isCorrect: answerIndex === correctAnswer
+                isCorrect: isCorrect
             });
 
-            if (answerIndex === correctAnswer) {
+            if (isCorrect) {
                 score++;
             }
             currentQuestion++;
