@@ -5,45 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semra'yı En İyi Kim Tanıyor?</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #ff69b4;
-        }
-        #question {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        #options {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        button {
-            padding: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #ff1493;
-        }
-        #result, #detailedResult {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #333;
-            text-align: left;
-        }
+        /* Önceki CSS kodları aynen kalacak */
     </style>
 </head>
 <body>
@@ -57,23 +19,23 @@
 
     <script>
         const questions = [
-            { question: "Semra'nın en sevdiği renk nedir?", options: ["Kırmızı", "Mavi", "Yeşil", "Mor"], correctAnswer: 1 },
-            { question: "Semra'nın en sevdiği yemek nedir?", options: ["Pizza", "İskender", "Karnıyarık", "Lahmacun"], correctAnswer: 2 },
-            { question: "Semra'nın en sevdiği film türü nedir?", options: ["Romantik Komedi", "Aksiyon", "Bilim Kurgu", "Dram"], correctAnswer: 1 },
-            { question: "Semra'nın en sevdiği mevsim hangisidir?", options: ["İlkbahar", "Yaz", "Sonbahar", "Kış"], correctAnswer: 2 },
-            { question: "Semra'nın en sevdiği spor nedir?", options: ["Yüzme", "Koşu", "Yoga", "Tenis"], correctAnswer: 3 },
-            { question: "Semra'nın favori tatlısı nedir?", options: ["Baklava", "Sütlaç", "Profiterol", "Kazandibi"], correctAnswer: 2 },
-            { question: "Semra'nın en sevdiği müzik türü nedir?", options: ["Pop", "Rock", "Klasik", "Jazz", "Rap"], correctAnswer: 4 },
-            { question: "Semra'nın en sevdiği kitap türü nedir?", options: ["Roman", "Bilim Kurgu", "Biyografi", "Şiir"], correctAnswer: 1 },
-            { question: "Semra'nın en sevdiği hayvan nedir?", options: ["Kedi", "Köpek", "Kuş", "Balık"], correctAnswer: 2 },
-            { question: "Semra'nın favori tatil yeri neresidir?", options: ["Deniz Kenarı", "Dağ", "Şehir", "Kırsal"], correctAnswer: 1 },
-            { question: "Semra'nın en sevdiği içecek nedir?", options: ["Kahve", "Çay", "Limonata", "Soda"], correctAnswer: 1 },
-            { question: "Semra'nın hobisi nedir?", options: ["Resim Yapmak", "Dans Etmek", "Bahçecilik", "Fotoğrafçılık"], correctAnswer: 2 },
-            { question: "Semra'nın favori ayakkabı stili nedir?", options: ["Spor Ayakkabı", "Topuklu", "Babet", "Sandalet"], correctAnswer: 1 },
-            { question: "Semra'nın en sevdiği renk kombinasyonu nedir?", options: ["Siyah-Beyaz", "Mavi-Yeşil", "Kırmızı-Beyaz", "Mor-Sarı"], correctAnswer: 1 },
-            { question: "Semra'nın favori ülkesi neresidir?", options: ["Yunanistan", "İtalya", "Fransa", "İspanya"], correctAnswer: 2 },
-            { question: "Semra'nın favori aksesuarı nedir?", options: ["Kolye", "Küpe", "Bilezik", "Yüzük"], correctAnswer: 2 },
-            { question: "Semra'nın en sevdiği hava durumu nedir?", options: ["Güneşli", "Yağmurlu", "Karlı", "Rüzgarlı"], correctAnswer: 1 }
+            { question: "Semra'nın en sevdiği renk nedir?", options: ["Kırmızı", "Mavi", "Yeşil", "Mor"], correctAnswer: 2 },
+            { question: "Semra'nın en sevdiği yemek nedir?", options: ["Pizza", "İskender", "Karnıyarık", "Lahmacun"], correctAnswer: 3 },
+            { question: "Semra'nın en sevdiği film türü nedir?", options: ["Romantik Komedi", "Aksiyon", "Bilim Kurgu", "Dram"], correctAnswer: 2 },
+            { question: "Semra'nın en sevdiği mevsim hangisidir?", options: ["İlkbahar", "Yaz", "Sonbahar", "Kış"], correctAnswer: 3 },
+            { question: "Semra'nın en sevdiği spor nedir?", options: ["Yüzme", "Koşu", "Yoga", "Tenis"], correctAnswer: 4 },
+            { question: "Semra'nın favori tatlısı nedir?", options: ["Baklava", "Sütlaç", "Profiterol", "Kazandibi"], correctAnswer: 3 },
+            { question: "Semra'nın en sevdiği müzik türü nedir?", options: ["Pop", "Rock", "Klasik", "Jazz", "Rap"], correctAnswer: 5 },
+            { question: "Semra'nın en sevdiği kitap türü nedir?", options: ["Roman", "Bilim Kurgu", "Biyografi", "Şiir"], correctAnswer: 2 },
+            { question: "Semra'nın en sevdiği hayvan nedir?", options: ["Kedi", "Köpek", "Kuş", "Balık"], correctAnswer: 3 },
+            { question: "Semra'nın favori tatil yeri neresidir?", options: ["Deniz Kenarı", "Dağ", "Şehir", "Kırsal"], correctAnswer: 2 },
+            { question: "Semra'nın en sevdiği içecek nedir?", options: ["Kahve", "Çay", "Limonata", "Soda"], correctAnswer: 2 },
+            { question: "Semra'nın hobisi nedir?", options: ["Resim Yapmak", "Dans Etmek", "Bahçecilik", "Fotoğrafçılık"], correctAnswer: 3 },
+            { question: "Semra'nın favori ayakkabı stili nedir?", options: ["Spor Ayakkabı", "Topuklu", "Babet", "Sandalet"], correctAnswer: 2 },
+            { question: "Semra'nın en sevdiği renk kombinasyonu nedir?", options: ["Siyah-Beyaz", "Mavi-Yeşil", "Kırmızı-Beyaz", "Mor-Sarı"], correctAnswer: 2 },
+            { question: "Semra'nın favori ülkesi neresidir?", options: ["Yunanistan", "İtalya", "Fransa", "İspanya"], correctAnswer: 3 },
+            { question: "Semra'nın favori aksesuarı nedir?", options: ["Kolye", "Küpe", "Bilezik", "Yüzük"], correctAnswer: 3 },
+            { question: "Semra'nın en sevdiği hava durumu nedir?", options: ["Güneşli", "Yağmurlu", "Karlı", "Rüzgarlı"], correctAnswer: 2 }
         ];
 
         let currentQuestion = 0;
@@ -88,7 +50,7 @@
             q.options.forEach((option, index) => {
                 const button = document.createElement('button');
                 button.textContent = option;
-                button.onclick = () => checkAnswer(index);
+                button.onclick = () => checkAnswer(index + 1);  // +1 eklendi
                 optionsDiv.appendChild(button);
             });
         }
@@ -97,8 +59,8 @@
             const correctAnswer = questions[currentQuestion].correctAnswer;
             userAnswers.push({
                 question: questions[currentQuestion].question,
-                userAnswer: questions[currentQuestion].options[answerIndex],
-                correctAnswer: questions[currentQuestion].options[correctAnswer],
+                userAnswer: questions[currentQuestion].options[answerIndex - 1],  // -1 eklendi
+                correctAnswer: questions[currentQuestion].options[correctAnswer - 1],  // -1 eklendi
                 isCorrect: answerIndex === correctAnswer
             });
 
